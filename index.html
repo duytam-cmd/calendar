@@ -132,7 +132,7 @@
 
         <!-- Quick Actions -->
         <div class="flex items-center gap-1.5">
-          <button id="btn-quick-add" type="button" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold tracking-wide bg-[#C87D65] hover:bg-[#B56951] text-white shadow-xs transition">
+          <button id="btn-quick-add" type="button" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold tracking-wide bg-[#FFD6E0] hover:bg-[#FFC2D1] text-[#881337] border border-[#FDA4AF] shadow-xs transition">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
             </svg>
@@ -213,38 +213,18 @@
       </div>
     </div>
 
-    <!-- Bottom Lookbook Palette Legend -->
-    <footer class="flex flex-wrap items-center justify-between gap-3 text-xs font-medium text-[#57534E] bg-[#FAF7F2] rounded-xl border border-[#DFD5C6] px-4 py-2.5">
-      <div class="flex flex-wrap items-center gap-5">
-        <span class="inline-flex items-center gap-2">
-          <span class="w-3.5 h-3.5 rounded-full bg-[#292524] border border-[#C87D65] inline-block"></span>
-          <span>Cột ngày hôm nay (Runway Spotlight)</span>
-        </span>
-        <span class="inline-flex items-center gap-2">
-          <span class="w-3.5 h-3.5 rounded-full border-2 border-[#C87D65] bg-[#F9EBE5] inline-block"></span>
-          <span>Ca thời gian thực đang diễn ra</span>
-        </span>
-        <span class="inline-flex items-center gap-2">
-          <span class="w-3.5 h-3.5 rounded-full bg-[#DCE6F2] border border-[#B2C7DF] inline-block"></span>
-          <span>Sáng T2–T7: Học trên lớp (Tự động để trống ngày nghỉ)</span>
-        </span>
-      </div>
-      <div class="text-[#78716C]">
-        <span>Nhấn vào <b>"Đi học / Được nghỉ"</b> trên mỗi cột Thứ để chuyển đổi ngày nghỉ • Nhấn vào ô bất kỳ để thêm nhanh</span>
-      </div>
-    </footer>
   </div>
 
-  <!-- Modal for Adding / Editing Schedule Item -->
-  <div id="task-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#1C1917]/45 backdrop-blur-xs p-4">
-    <div class="bg-[#FAF7F2] rounded-2xl border border-[#D5C7B4] shadow-2xl w-full max-w-md overflow-hidden">
-      <div class="px-5 py-4 bg-[#F2ECE1] border-b border-[#DFD5C6] flex items-center justify-between">
+  <!-- Modal for Adding / Editing Schedule Item (Fresh Pastel Theme) -->
+  <div id="task-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#1C1917]/35 backdrop-blur-xs p-4">
+    <div class="bg-[#FFFCF9] rounded-2xl border border-[#FBCFE8] shadow-2xl w-full max-w-md overflow-hidden">
+      <div class="px-5 py-4 bg-gradient-to-r from-[#FFE4E6] via-[#E0F2FE] to-[#D1FAE5] border-b border-[#FBCFE8] flex items-center justify-between">
         <div>
-          <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-[#9C5740] block">Atelier Entry</span>
+          <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-[#BE123C] block">Fresh Pastel Entry</span>
           <h2 id="modal-title" class="font-editorial text-xl font-bold text-[#1C1917]">Thêm lịch trình</h2>
-          <p id="modal-subtitle" class="text-xs font-semibold text-[#78716C] mt-0.5">Thứ 2 • Buổi Sáng</p>
+          <p id="modal-subtitle" class="text-xs font-semibold text-[#475569] mt-0.5">Thứ 2 • Buổi Sáng</p>
         </div>
-        <button id="btn-close-modal" type="button" class="p-1.5 rounded-xl bg-[#FAF7F2] hover:bg-[#F3D5D1] text-[#57534E] hover:text-[#9E3F37] border border-[#DFD5C6] transition">
+        <button id="btn-close-modal" type="button" class="p-1.5 rounded-xl bg-white/90 hover:bg-[#FFE4E6] text-[#57534E] hover:text-[#BE123C] border border-[#FBCFE8] transition">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -258,7 +238,7 @@
         <div id="day-session-picker-row" class="grid grid-cols-2 gap-3">
           <div>
             <label for="input-day-index" class="block text-[11px] font-bold uppercase tracking-wider text-[#57534E] mb-1">Thứ trong tuần</label>
-            <select id="input-day-index" class="w-full rounded-xl border border-[#D5C7B4] bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] focus:outline-none focus:ring-2 focus:ring-[#C87D65]">
+            <select id="input-day-index" class="w-full rounded-xl border border-[#BAE6FD] bg-[#F8FAFC] px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] focus:outline-none focus:ring-2 focus:ring-[#38BDF8]">
               <option value="0">Thứ 2</option>
               <option value="1">Thứ 3</option>
               <option value="2">Thứ 4</option>
@@ -270,7 +250,7 @@
           </div>
           <div>
             <label for="input-session-id" class="block text-[11px] font-bold uppercase tracking-wider text-[#57534E] mb-1">Thời gian (Buổi)</label>
-            <select id="input-session-id" class="w-full rounded-xl border border-[#D5C7B4] bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] focus:outline-none focus:ring-2 focus:ring-[#C87D65]">
+            <select id="input-session-id" class="w-full rounded-xl border border-[#BAE6FD] bg-[#F8FAFC] px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] focus:outline-none focus:ring-2 focus:ring-[#38BDF8]">
               <option value="sang">Sáng (05:00 - 11:59)</option>
               <option value="chieu">Chiều (12:00 - 17:59)</option>
               <option value="toi">Tối (18:00 - 23:59)</option>
@@ -280,35 +260,37 @@
 
         <div>
           <label for="input-task-text" class="block text-[11px] font-bold uppercase tracking-wider text-[#57534E] mb-1">Nội dung công việc / Môn học</label>
-          <input id="input-task-text" type="text" required placeholder="VD: Học trên lớp, Ôn Vật lý 12, Luyện đề HSA..." class="w-full rounded-xl border border-[#D5C7B4] bg-white px-3.5 py-2.5 text-sm font-semibold text-[#1C1917] placeholder:text-[#A8A29E] focus:outline-none focus:ring-2 focus:ring-[#C87D65]" />
+          <input id="input-task-text" type="text" required placeholder="VD: Học trên lớp, Ôn Vật lý 12, Luyện đề HSA..." class="w-full rounded-xl border border-[#FBCFE8] bg-white px-3.5 py-2.5 text-sm font-semibold text-[#1C1917] placeholder:text-[#A8A29E] focus:outline-none focus:ring-2 focus:ring-[#F472B6]" />
         </div>
 
         <div class="grid grid-cols-2 gap-3">
           <div>
             <label for="input-task-time" class="block text-[11px] font-bold uppercase tracking-wider text-[#57534E] mb-1">Khung giờ (tùy chọn)</label>
-            <input id="input-task-time" type="text" placeholder="VD: 07:00 - 11:30" class="w-full rounded-xl border border-[#D5C7B4] bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] placeholder:text-[#A8A29E] focus:outline-none focus:ring-2 focus:ring-[#C87D65]" />
+            <input id="input-task-time" type="text" placeholder="VD: 07:00 - 11:30" class="w-full rounded-xl border border-[#BAE6FD] bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] placeholder:text-[#A8A29E] focus:outline-none focus:ring-2 focus:ring-[#38BDF8]" />
           </div>
           <div>
-            <label for="input-task-color" class="block text-[11px] font-bold uppercase tracking-wider text-[#57534E] mb-1">Sắc độ Couture Pastel</label>
-            <select id="input-task-color" class="w-full rounded-xl border border-[#D5C7B4] bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] focus:outline-none focus:ring-2 focus:ring-[#C87D65]">
-              <option value="blue">Powder Blue (Học trên lớp)</option>
-              <option value="emerald">Matcha Sage (Rèn luyện)</option>
-              <option value="amber">Champagne Gold (Trọng tâm)</option>
-              <option value="purple">Wisteria Silk (Luyện đề)</option>
-              <option value="rose">Blush Terracotta (Kiểm tra)</option>
+            <label for="input-task-color" class="block text-[11px] font-bold uppercase tracking-wider text-[#57534E] mb-1">Sắc độ Pastel Tươi</label>
+            <select id="input-task-color" class="w-full rounded-xl border border-[#A7F3D0] bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-[#1C1917] focus:outline-none focus:ring-2 focus:ring-[#34D399]">
+              <option value="blue">Sky Blue Tươi (Học trên lớp)</option>
+              <option value="emerald">Mint Fresh (Rèn luyện)</option>
+              <option value="amber">Buttercup Sunny (Trọng tâm)</option>
+              <option value="purple">Lavender Lilac (Luyện đề)</option>
+              <option value="rose">Sakura Pink (Kiểm tra)</option>
+              <option value="teal">Aqua Tiffany (Ngoại ngữ / Tự học)</option>
+              <option value="mocha">Peach Coral (Ghi chú / Cá nhân)</option>
             </select>
           </div>
         </div>
 
-        <div class="flex items-center justify-between pt-3 border-t border-[#DFD5C6]">
-          <button id="btn-delete-task" type="button" class="hidden px-3.5 py-2 rounded-xl text-xs font-bold text-[#9E3F37] bg-[#F9E8E6] hover:bg-[#F3D5D1] border border-[#EBC2BD] transition">
+        <div class="flex items-center justify-between pt-3 border-t border-[#FBCFE8]">
+          <button id="btn-delete-task" type="button" class="hidden px-3.5 py-2 rounded-xl text-xs font-bold text-[#BE123C] bg-[#FFE4E6] hover:bg-[#FECDD3] border border-[#FDA4AF] transition">
             Xóa mục này
           </button>
           <div class="flex items-center gap-2 ml-auto">
-            <button id="btn-cancel-modal" type="button" class="px-3.5 py-2 rounded-xl text-xs font-semibold text-[#57534E] bg-white hover:bg-[#F2ECE1] border border-[#D5C7B4] transition">
+            <button id="btn-cancel-modal" type="button" class="px-3.5 py-2 rounded-xl text-xs font-semibold text-[#475569] bg-[#F1F5F9] hover:bg-[#E2E8F0] border border-[#CBD5E1] transition">
               Hủy
             </button>
-            <button type="submit" class="px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#292524] hover:bg-[#44403C] shadow-xs transition">
+            <button type="submit" class="px-4 py-2 rounded-xl text-xs font-bold text-[#065F46] bg-[#A7F3D0] hover:bg-[#6EE7B7] border border-[#34D399] shadow-xs transition">
               Lưu lịch
             </button>
           </div>
@@ -326,7 +308,7 @@
         <button id="btn-confirm-cancel" type="button" class="px-3.5 py-2 rounded-xl text-xs font-semibold text-[#57534E] bg-white hover:bg-[#F2ECE1] border border-[#D5C7B4] transition">
           Hủy
         </button>
-        <button id="btn-confirm-ok" type="button" class="px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#C87D65] hover:bg-[#B56951] transition">
+        <button id="btn-confirm-ok" type="button" class="px-4 py-2 rounded-xl text-xs font-bold text-[#881337] bg-[#FFD6E0] hover:bg-[#FFC2D1] border border-[#FDA4AF] transition">
           Đồng ý
         </button>
       </div>
@@ -429,42 +411,56 @@
       }
     ];
 
-    // Couture Task Swatches
+    // Fresh Pastel Task Swatches (7 bright & airy pastel shades)
     const COLOR_STYLES = {
       blue: {
-        bg: 'bg-[#DCE6F2]/95 hover:bg-[#CEDDF0]',
-        border: 'border-[#B2C7DF]',
-        accentBar: 'bg-[#5A7FA8]',
-        text: 'text-[#1E3246]',
-        time: 'text-[#426282]'
+        bg: 'bg-[#D6EEFF] hover:bg-[#C2E5FF]',
+        border: 'border-[#93C5FD]',
+        accentBar: 'bg-[#38BDF8]',
+        text: 'text-[#0C4A6E]',
+        time: 'text-[#0284C7]'
       },
       emerald: {
-        bg: 'bg-[#DFECE1]/95 hover:bg-[#D1E4D4]',
-        border: 'border-[#B5D1B9]',
-        accentBar: 'bg-[#54825E]',
-        text: 'text-[#1F3A26]',
-        time: 'text-[#3D6B49]'
+        bg: 'bg-[#D1FAE5] hover:bg-[#A7F3D0]',
+        border: 'border-[#6EE7B7]',
+        accentBar: 'bg-[#10B981]',
+        text: 'text-[#064E3B]',
+        time: 'text-[#059669]'
       },
       amber: {
-        bg: 'bg-[#F5E8CE]/95 hover:bg-[#EFE0BF]',
-        border: 'border-[#DEC79B]',
-        accentBar: 'bg-[#B8893A]',
-        text: 'text-[#423113]',
-        time: 'text-[#7A5B25]'
+        bg: 'bg-[#FEF3C7] hover:bg-[#FDE68A]',
+        border: 'border-[#FCD34D]',
+        accentBar: 'bg-[#F59E0B]',
+        text: 'text-[#78350F]',
+        time: 'text-[#D97706]'
       },
       purple: {
-        bg: 'bg-[#EAE0F2]/95 hover:bg-[#E0D2EC]',
-        border: 'border-[#C9B6DA]',
-        accentBar: 'bg-[#7D5BA6]',
-        text: 'text-[#322145]',
-        time: 'text-[#5D427D]'
+        bg: 'bg-[#EDE9FE] hover:bg-[#DDD6FE]',
+        border: 'border-[#C4B5FD]',
+        accentBar: 'bg-[#8B5CF6]',
+        text: 'text-[#3B0764]',
+        time: 'text-[#7C3AED]'
       },
       rose: {
-        bg: 'bg-[#F6DFDC]/95 hover:bg-[#F0D0CC]',
-        border: 'border-[#E2B6B0]',
-        accentBar: 'bg-[#C86D61]',
-        text: 'text-[#4A201B]',
-        time: 'text-[#8C433A]'
+        bg: 'bg-[#FFE4E6] hover:bg-[#FECDD3]',
+        border: 'border-[#FDA4AF]',
+        accentBar: 'bg-[#F43F5E]',
+        text: 'text-[#881337]',
+        time: 'text-[#E11D48]'
+      },
+      teal: {
+        bg: 'bg-[#CCFBF1] hover:bg-[#99F6E4]',
+        border: 'border-[#5EEAD4]',
+        accentBar: 'bg-[#14B8A6]',
+        text: 'text-[#134E4A]',
+        time: 'text-[#0D9488]'
+      },
+      mocha: {
+        bg: 'bg-[#FFEDD5] hover:bg-[#FED7AA]',
+        border: 'border-[#FDBA74]',
+        accentBar: 'bg-[#FB923C]',
+        text: 'text-[#7C2D12]',
+        time: 'text-[#EA580C]'
       }
     };
 
@@ -727,41 +723,34 @@
         const offReason = getDayOffReason(dayInfo.dateKey, dayInfo.index);
         const th = document.createElement('th');
         th.scope = 'col';
-        th.className = `p-2.5 border-b border-r border-[#D5C7B4] last:border-r-0 text-center transition-colors select-none ${
-          isToday
-            ? 'bg-[#292524] text-[#F9F6F0]'
-            : `${dayInfo.headerBg} text-[#1C1917]`
-        }`;
+        th.className = `p-2.5 border-b border-r border-[#D5C7B4] last:border-r-0 text-center transition-colors select-none ${dayInfo.headerBg} text-[#1C1917]`;
 
         const toggleBadgeHtml = dayInfo.index <= 5
-          ? `<button type="button" class="toggle-off-btn mt-1.5 inline-flex items-center gap-1 text-[10px] font-bold px-2.5 py-0.5 rounded-full border transition ${
+          ? `<button type="button" class="toggle-off-btn mt-1 inline-flex items-center gap-1 text-[10px] font-bold px-2.5 py-0.5 rounded-full border transition ${
                offReason
                  ? 'bg-[#F9E8E6] text-[#9E3F37] border-[#EBC2BD] hover:bg-[#F3D5D1]'
-                 : isToday
-                 ? 'bg-[#44403C] text-[#E7E5E4] border-[#57534E] hover:bg-[#57534E]'
                  : 'bg-white/80 text-[#3D6B49] border-[#C3DAC6] hover:bg-white'
              }" title="Nhấn để chuyển đổi Đi học / Được nghỉ (Tự động làm trống buổi sáng)">
                <span>${offReason ? 'Được nghỉ' : 'Đi học'}</span>
              </button>`
-          : `<span class="mt-1.5 inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-0.5 rounded-full ${
-               isToday
-                 ? 'bg-[#44403C] text-[#D6C7B2] border border-[#57534E]'
-                 : 'bg-white/75 text-[#6B508A] border border-[#D6C0DC]'
-             }">
+          : `<span class="mt-1 inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-0.5 rounded-full bg-white/75 text-[#6B508A] border border-[#D6C0DC]">
                Nghỉ cuối tuần
              </span>`;
 
         th.innerHTML = `
           <div class="flex flex-col items-center justify-center gap-0.5">
-            <div class="flex items-center gap-1.5">
-              <span class="font-editorial text-base sm:text-lg font-bold tracking-wide">${dayInfo.label}</span>
-              ${isToday ? '<span class="text-[9px] uppercase font-extrabold tracking-widest px-1.5 py-0.5 rounded bg-[#C87D65] text-white">Today</span>' : ''}
+            <div class="flex items-center justify-center gap-1.5 flex-wrap">
+              <span class="font-editorial text-base sm:text-lg font-bold tracking-wide text-[#1C1917]">${dayInfo.label}</span>
+              ${
+                isToday
+                  ? `<span class="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#FAF7F2] border border-[#C87D65] text-[#9C5740] w-fit">
+                       <span class="w-1.5 h-1.5 rounded-full bg-[#C87D65] animate-ping"></span>
+                       Đang diễn ra
+                     </span>`
+                  : ''
+              }
             </div>
-            <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${
-              isToday
-                ? 'bg-[#1C1917] text-[#E7E5E4] border-[#57534E]'
-                : dayInfo.dateBadgeBg
-            }">${dayInfo.shortDM}/${dayInfo.dateObj.getFullYear()}</span>
+            <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${dayInfo.dateBadgeBg}">${dayInfo.shortDM}/${dayInfo.dateObj.getFullYear()}</span>
             ${toggleBadgeHtml}
           </div>
         `;
@@ -845,7 +834,7 @@
             openTaskModal(dayInfo.index, session.id, null, true);
           });
 
-          // Cell Top Bar (Live indicator + Quick + button)
+          // Cell Top Bar (Live indicator + Quick + button in fresh pastel)
           const topBar = document.createElement('div');
           topBar.className = 'flex items-center justify-between mb-1.5 min-h-[20px]';
           topBar.innerHTML = `
@@ -858,8 +847,8 @@
                   : `<span class="text-[10px] font-semibold text-[#A8A29E] opacity-0 group-hover:opacity-100 transition">${dayInfo.short} • ${session.label}</span>`
               }
             </div>
-            <button type="button" class="cell-add-btn opacity-0 group-hover:opacity-100 focus:opacity-100 w-6 h-6 rounded-lg bg-white hover:bg-[#292524] text-[#57534E] hover:text-white border border-[#D5C7B4] flex items-center justify-center transition shadow-2xs" title="Thêm vào ${dayInfo.label} - Buổi ${session.label}">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <button type="button" class="cell-add-btn opacity-0 group-hover:opacity-100 focus:opacity-100 w-6 h-6 rounded-lg bg-[#FFE4E6] hover:bg-[#FECDD3] text-[#BE123C] border border-[#FDA4AF] flex items-center justify-center transition shadow-2xs" title="Thêm vào ${dayInfo.label} - Buổi ${session.label}">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
               </svg>
             </button>
@@ -878,11 +867,11 @@
 
           if (tasks.length === 0) {
             const emptyHint = document.createElement('div');
-            emptyHint.className = 'h-20 flex flex-col items-center justify-center rounded-xl border border-dashed border-transparent group-hover:border-[#D5C7B4] group-hover:bg-white/50 transition px-1 text-center';
+            emptyHint.className = 'h-20 flex flex-col items-center justify-center rounded-xl border border-dashed border-transparent group-hover:border-[#FDA4AF] group-hover:bg-[#FFF1F2]/70 transition px-1 text-center';
             if (offReason && session.id === 'sang') {
-              emptyHint.innerHTML = `<span class="text-[10px] font-medium italic text-[#9C5740]/80 group-hover:text-[#78716C] select-none">${escapeHtml(offReason)} • Trống</span>`;
+              emptyHint.innerHTML = `<span class="text-[10px] font-medium italic text-[#9C5740]/80 group-hover:text-[#BE123C] select-none">${escapeHtml(offReason)} • Trống</span>`;
             } else {
-              emptyHint.innerHTML = `<span class="text-[11px] font-medium text-[#C5B4A0] group-hover:text-[#78716C] select-none">+ Thêm lịch</span>`;
+              emptyHint.innerHTML = `<span class="text-[11px] font-semibold text-[#C5B4A0] group-hover:text-[#E11D48] select-none">+ Thêm mục</span>`;
             }
             listContainer.appendChild(emptyHint);
           } else {
@@ -896,7 +885,7 @@
               card.innerHTML = `
                 <span class="absolute left-0 top-0 bottom-0 w-1 ${style.accentBar}"></span>
                 <div class="flex items-start gap-2">
-                  <input type="checkbox" ${task.done ? 'checked' : ''} class="task-check mt-0.5 rounded border-[#A8A29E] text-[#3D6B49] focus:ring-[#7E9680] cursor-pointer shrink-0 w-3.5 h-3.5" title="Đánh dấu hoàn thành" />
+                  <input type="checkbox" ${task.done ? 'checked' : ''} class="task-check mt-0.5 rounded border-[#A8A29E] text-[#10B981] focus:ring-[#34D399] cursor-pointer shrink-0 w-3.5 h-3.5" title="Đánh dấu hoàn thành" />
                   <div class="flex-1 min-w-0">
                     <p class="font-bold leading-snug break-words ${style.text} ${task.done ? 'line-through opacity-75' : ''}">${escapeHtml(task.text)}</p>
                     ${
